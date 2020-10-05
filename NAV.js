@@ -7,3 +7,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+document.addEventListener('click', function(e) {
+  var snav = document.getElementById("mySidenav");
+  if (e.target.id !== snav.id && !snav.contains(e.target) && !e.target.className.match('openbtn'))
+    closeNav();
+}, false);
