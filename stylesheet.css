@@ -54,21 +54,36 @@ h1	{
 	background-color: rgba(0,0,0,1)!important;
 	float:left;
 }
-.one {
+.col{
+	padding: 0px;
+}
+.fa{
+	position:relative;
+	display: inline-block;
+	align-self: center;
+}
+.logo{
+	
+	align-self: center;
+	width: 30px
+}
+.home {
     align-content: center;
     background: #4492AA; /* Old browsers */
 	
 }
-.two {
-    background-color: #21BDDA;
+.about {
+    background-image: url("../Unnamed Site 2/images/pencils-free-image.jpg");
+	background-size: cover;
+	background-position: bottom;
 }
-.three {
+.services {
     background-color: #6B20DA;
 }
-.four {
+.clients {
     background-color: #168012;
 }
-.five {
+.contact {
     background-color: #CF6E27;
 }
 .span{
@@ -106,8 +121,18 @@ h1	{
 	text-align:  center;
 }
 
+.sidenav i {
+  padding-top: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #4492AA;
+  display:inline-block; 
+  transition: 0.3s;
+	text-align:  center;
+}
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav i a:hover {
   color: #000000;
 }
 
