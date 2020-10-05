@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-y: hidden;
+}
+/*
+.responsive-canvas{
+	width: 100vw;
+	height:100vh;
+	
+}
+*/
+
+
+.slider {
+	font-family: sans-serif;
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	flex-wrap: nowrap;
+    overflow-x: auto;
+	overflow-y: hidden;
+	
+}
+section {
+	border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+	flex: 0 0 auto;
+}
+h1	{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	width: 100%;
+	left: 0;
+	font-size: calc(1rem + 3vw);
+	z-index: 9;
+}
+
+.myNav{
+	z-index: 1000;
+	background-color: rgba(0,0,0,1)!important;
+	float:left;
+}
+.one {
+    align-content: center;
+    background: #4492AA; /* Old browsers */
+	
+}
+.two {
+    background-color: #21BDDA;
+}
+.three {
+    background-color: #6B20DA;
+}
+.four {
+    background-color: #168012;
+}
+.five {
+    background-color: #CF6E27;
+}
+.span{
+	padding: 8px 8px 8px 8px;
+	color:white;
+	z-index:1;
+	position:absolute;
+	font-size: 24px;
+	
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(255,255,255,1.00)!important; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; 
+ 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #4492AA;
+  display: block;
+  transition: 0.3s;
+	text-align:  center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+	padding: 0px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #4492AA radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #4492AA;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
