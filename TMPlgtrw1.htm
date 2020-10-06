@@ -69,30 +69,14 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px; background-color:rgba(68, 146, 170, 0);">
 <!--<main> The overlay -->
-<div id="mySidenav" class="sidenav" style="background-color: rgba(255,255,255,0.00)">
-  <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
-	<img src="images/logo.svg" class"logo"> 
-	<a class="ripple" href="#one" onclick="closeNav()">Home</a> 
-	<a class="ripple" href="#two" onclick="closeNav()">About</a> 
-	<a class="ripple" href="#three" onclick="closeNav()">Services</a> 
-	<a class="ripple" href="#four" onclick="closeNav()">Clients</a> 
-	<a class="ripple" href="#five" onclick="closeNav()">Contact</a>
-  <div class="row align-content-between"> 
-	  <i href="https://www.facebook.com/they.webdesign" class="col fa fa-facebook-square" style="font-size:36px" ></i> 
-	  <i class="col fa fa-twitter-square" style="font-size:36px" href="https://twitter.com/THEYDESIGN1" ></i> 
-	</div>
+<div id="mySidenav" class="sidenav" style="background-color: rgba(255,255,255,0.00)"> <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a> <img src="images/logo.svg" class"logo"> <a class="ripple" href="#one" onclick="closeNav()">Home</a> <a class="ripple" href="#two" onclick="closeNav()">About</a> <a class="ripple" href="#three" onclick="closeNav()">Services</a> <a class="ripple" href="#four" onclick="closeNav()">Clients</a> <a class="ripple" href="#five" onclick="closeNav()">Contact</a>
+  <div class="row align-content-between"> <i href="https://www.facebook.com/they.webdesign" class="col fa fa-facebook-square" style="font-size:36px" ></i> <i class="col fa fa-twitter-square" style="font-size:36px" href="https://twitter.com/THEYDESIGN1" ></i> </div>
 </div>
-	
+
 <!-- Use any element to open the sidenav --> 
-<span class="span fas fa-bars openbtn" style="color: rgba(255,255,255,1.00)" onclick="openNav()"></span> 
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page --> 
-<!--
-<div id="main">
-  ...
-</div>
--->
-
+<span class="span fas fa-bars openbtn" style="color: rgba(255,255,255,1.00)" onclick="openNav()">&nbsp;</span>
+	
+	<!--home-->
 <div class="slider">
   <section class="home" id="one">
     <div id="animation_container" style="background-color:rgba(68, 146, 170, 1.00); width:auto; height:auto">
@@ -100,21 +84,23 @@ function handleComplete(evt,comp) {
       <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:225px; height:225px; position: absolute; left: 0px; top: 0px; display: block;"> </div>
     </div>
     
-    <!--    <h1 class="logoRoto text-center ">THEY. <span class="txt-rotate" data-period="2000" data-rotate='[ "DESIGN", "CREATE", "IMAGINE", "MAKE" ]'></span> </h1>--> 
+    <!--    --> 
   </section>
+	
+	<!--about-->
   <section class="about" id="two">
-	  
     <div class="jumbotron">
-	    <h1 class="display-4">Hello, world!</h1>
-	    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-	    <hr class="my-4">
-	    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-	    <p class="lead"> <a class="btn btn-primary btn-lg" href="#three" role="button">Learn more</a> </p>
+      <h1 class="logoRoto text-center ">THEY. <span class="txt-rotate" data-period="2000" data-rotate="[ "DESIGN", "CREATE", "IMAGINE", "MAKE" ]"></span> </h1>
+      <p class="lead">They put you at the heart of all requests, sure they might take a little longer than the rest but perfection takes time, right? and they save you time and money.</p>
+      <hr class="my-4">
+      <!--	    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+      <p class="lead"> <a class="btn btn-primary btn-lg" href="#three" role="button">Learn more</a> </p>
     </div>
-
   </section>
+	<!--serv-->
   <section class="services" id="three">
-    <h1>Section Three</h1>
+	  
+   
   </section>
   <section class="clients" id="four">
     <h1>Section Four</h1>

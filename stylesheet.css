@@ -8,13 +8,11 @@
 body {
 	overflow-y: hidden;
 }
-/*
-.responsive-canvas{
-	width: 100vw;
-	height:100vh;
+canvas{
+	position: fixed;
 	
 }
-*/
+
 
 
 .slider {
@@ -47,6 +45,7 @@ h1	{
 	left: 0;
 	font-size: calc(1rem + 3vw);
 	z-index: 9;
+	font-family: TheyDesign;
 }
 
 .myNav{
@@ -75,12 +74,16 @@ h1	{
 .about {
     background-image: url("../Unnamed Site 2/images/pencils-free-image.jpg");
 	background-size: cover;
+	background-clip: border-box;
 	background-position: bottom;
-	display:inline-block;
+/*	display:inline-block;*/
+/*	overflow-x: hidden;*/
+	
 }
 .jumbotron{
 	background-color: rgba(0,0,0,0.40);
 	color:white;
+	margin-top: 32px;
 	
 }
 .services {
