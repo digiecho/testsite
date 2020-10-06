@@ -70,12 +70,17 @@ function handleComplete(evt,comp) {
 <body onload="init();" style="margin:0px; background-color:rgba(68, 146, 170, 0);">
 <!--<main> The overlay -->
 <div id="mySidenav" class="sidenav" style="background-color: rgba(255,255,255,0.00)">
-	
-  
   <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
-	
-  <img src="images/Asset 13.svg" class"logo"> <a class="ripple" href="#one" onclick="closeNav()" >Home</a> <a class="ripple" href="#two" onclick="closeNav()" >About</a> <a class="ripple" href="#three">Services</a> <a class="ripple" href="#four">Clients</a> <a class="ripple" href="#five">Contact</a>
-  <div class="row align-content-between"> <i href="https://www.facebook.com/they.webdesign" class="col fa fa-facebook-square" style="font-size:36px" ></i> <i class="col fa fa-twitter-square" style="font-size:36px" href="https://twitter.com/THEYDESIGN1" ></i> </div>
+	<img src="images/logo.svg" class"logo"> 
+	<a class="ripple" href="#one" onclick="closeNav()">Home</a> 
+	<a class="ripple" href="#two" onclick="closeNav()">About</a> 
+	<a class="ripple" href="#three" onclick="closeNav()">Services</a> 
+	<a class="ripple" href="#four" onclick="closeNav()">Clients</a> 
+	<a class="ripple" href="#five" onclick="closeNav()">Contact</a>
+  <div class="row align-content-between"> 
+	  <i href="https://www.facebook.com/they.webdesign" class="col fa fa-facebook-square" style="font-size:36px" ></i> 
+	  <i class="col fa fa-twitter-square" style="font-size:36px" href="https://twitter.com/THEYDESIGN1" ></i> 
+	</div>
 </div>
 	
 <!-- Use any element to open the sidenav --> 
@@ -89,7 +94,7 @@ function handleComplete(evt,comp) {
 -->
 
 <div class="slider">
-  <section class="home">
+  <section class="home" id="one">
     <div id="animation_container" style="background-color:rgba(68, 146, 170, 1.00); width:auto; height:auto">
       <canvas id="canvas" class="responsive-canvas" style="width:225px; height:225px; position: absolute; display: block; background-color:rgba(68, 146, 170, 1.00);"></canvas>
       <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:225px; height:225px; position: absolute; left: 0px; top: 0px; display: block;"> </div>
@@ -98,7 +103,15 @@ function handleComplete(evt,comp) {
     <!--    <h1 class="logoRoto text-center ">THEY. <span class="txt-rotate" data-period="2000" data-rotate='[ "DESIGN", "CREATE", "IMAGINE", "MAKE" ]'></span> </h1>--> 
   </section>
   <section class="about" id="two">
-    <h1>Section Two</h1>
+	  
+    <div class="jumbotron">
+	    <h1 class="display-4">Hello, world!</h1>
+	    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	    <hr class="my-4">
+	    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	    <p class="lead"> <a class="btn btn-primary btn-lg" href="#three" role="button">Learn more</a> </p>
+    </div>
+
   </section>
   <section class="services" id="three">
     <h1>Section Three</h1>
@@ -106,7 +119,7 @@ function handleComplete(evt,comp) {
   <section class="clients" id="four">
     <h1>Section Four</h1>
   </section>
-  <section class="contacts" id="five">
+  <section class="contact" id="five">
     <h1>Section Five</h1>
   </section>
 </div>

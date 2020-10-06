@@ -13,3 +13,8 @@ document.addEventListener('click', function(e) {
   if (e.target.id !== snav.id && !snav.contains(e.target) && !e.target.className.match('openbtn'))
     closeNav();
 }, false);
+document.addEventListener('touch', function(e) {
+  var snav = document.getElementById("mySidenav");
+  if (e.target.id !== snav.id && !snav.contains(e.target) && !e.target.className.match('openbtn'))
+    closeNav();
+}, false);

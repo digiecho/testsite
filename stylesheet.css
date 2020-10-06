@@ -76,6 +76,12 @@ h1	{
     background-image: url("../Unnamed Site 2/images/pencils-free-image.jpg");
 	background-size: cover;
 	background-position: bottom;
+	display:inline-block;
+}
+.jumbotron{
+	background-color: rgba(0,0,0,0.40);
+	color:white;
+	
 }
 .services {
     background-color: #6B20DA;
@@ -100,7 +106,7 @@ h1	{
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Stay on top */
+  z-index: 10; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: rgba(255,255,255,1.00)!important; /* Black*/
@@ -132,10 +138,12 @@ h1	{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav i a:hover {
+.sidenav a:hover {
   color: #000000;
 }
-
+.sidenav i:hover {
+  color: #000000;
+}
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
